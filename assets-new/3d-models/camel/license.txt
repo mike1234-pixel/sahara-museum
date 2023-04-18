@@ -1,0 +1,11 @@
+Model Information:
+* title:	camel
+* source:	https://sketchfab.com/3d-models/camel-44ef2ea4b50a49e395e5e3ebbdc99f98
+* author:	omarme37 (https://sketchfab.com/omarme37)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "camel" (https://sketchfab.com/3d-models/camel-44ef2ea4b50a49e395e5e3ebbdc99f98) by omarme37 (https://sketchfab.com/omarme37) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,21 @@
+body {
+  max-height: 100vh;
+}
+
+.scene-border {
+  background: linear-gradient(
+    38deg,
+    rgba(252, 252, 252, 1) 0%,
+    rgba(144, 61, 159, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.scene {
+  width: 80vw;
+  height: 80vh;
+}

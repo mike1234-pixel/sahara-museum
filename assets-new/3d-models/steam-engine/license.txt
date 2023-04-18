@@ -1,0 +1,11 @@
+Model Information:
+* title:	BR52 Steam Locomotive Animation
+* source:	https://sketchfab.com/3d-models/br52-steam-locomotive-animation-852f498c26ee457d933f7fbeeb50c8ab
+* author:	Ryan.Qin (https://sketchfab.com/Ryan.Qin)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "BR52 Steam Locomotive Animation" (https://sketchfab.com/3d-models/br52-steam-locomotive-animation-852f498c26ee457d933f7fbeeb50c8ab) by Ryan.Qin (https://sketchfab.com/Ryan.Qin) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
