@@ -1,7 +1,4 @@
-<!-- MAKE THIS AN EDUCATIONAL TOUR -->
 <!-- to do: -->
-<!-- get animations to work -->
-<!-- create an an environment with relevant objects, with cards explaining the history , pick a real location or theme -->
 <!--  add sound? -->
 <!-- add 3d model credits -->
 <!---->
@@ -28,7 +25,7 @@
     <nav class="navbar">
       <div class="container">
         <div class="inner-nav">
-          <div class="logo">VR Tours</div>
+          <div class="logo">Sahara VR</div>
           <div>
             <a href="/1">About</a>
           </div>
@@ -70,6 +67,10 @@
               <a-asset-item
                 id="pyramid"
                 src="assets/3d-models/pyramid/scene.gltf"
+              ></a-asset-item>
+              <a-asset-item
+                id="coffins"
+                src="assets/3d-models/coffins/scene.gltf"
               ></a-asset-item>
               <a-asset-item
                 id="desert-winds"
@@ -146,7 +147,7 @@
               gltf-model="#desert-winds"
               position="4 -3 -10"
               scale="1 1 1"
-              animation-mixer="clip: Object_0; loop: true;"
+              animation-mixer
             ></a-entity>
 
             <!--<a-entity
@@ -168,6 +169,14 @@
               position="10 0 -100"
               scale="10 10 10"
               modify-materials
+            ></a-entity>
+
+            <a-entity
+              gltf-model="#coffins"
+              position="10 0 -100"
+              scale="0.1 0.1 0.1"
+              modify-materials
+              animation-mixer
             ></a-entity>
 
             <a-entity

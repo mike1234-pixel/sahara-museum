@@ -1,0 +1,11 @@
+Model Information:
+* title:	Coffins of Pa-di-mut, Mut-iy-y, and Ankh-Khonsu
+* source:	https://sketchfab.com/3d-models/coffins-of-pa-di-mut-mut-iy-y-and-ankh-khonsu-012ae83b8d9045468b30584883149035
+* author:	Harvard Museum of the Ancient Near East (https://sketchfab.com/hmane)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Coffins of Pa-di-mut, Mut-iy-y, and Ankh-Khonsu" (https://sketchfab.com/3d-models/coffins-of-pa-di-mut-mut-iy-y-and-ankh-khonsu-012ae83b8d9045468b30584883149035) by Harvard Museum of the Ancient Near East (https://sketchfab.com/hmane) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
