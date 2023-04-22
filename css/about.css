@@ -1,0 +1,25 @@
+.about-page {
+  color: var(--white);
+  padding-top: 160px;
+}
+
+.about-page h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+.about-page p,
+.about-page li {
+  margin-bottom: 26px;
+}
+
+.about-page ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.about-page ul a:hover,
+.about-page ul a:focus,
+.about-page ul a:active {
+  text-decoration: underline;
+}

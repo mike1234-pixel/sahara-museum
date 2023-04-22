@@ -7,7 +7,7 @@
     rgba(0, 0, 0, 1) 58%,
     rgba(80, 80, 80, 1) 88%
   );
-  padding: 0 20px;
+  padding: 50px 0;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -22,7 +22,7 @@
   height: 100%;
 }
 
-.inner-nav .logo {
+.inner-nav .logo a {
   font-size: 3rem;
   color: var(--white);
 }
