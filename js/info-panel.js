@@ -10,17 +10,17 @@ AFRAME.registerComponent("info-panel", {
       climateButton: {
         title: "Sahara Desert Climate",
         description:
-          "The Sahara Desert is known for its harsh climate, with temperatures reaching over 120°F (49°C) during the day and dropping to below freezing at night. This extreme temperature variation is due to the desert's low humidity and lack of cloud cover, which allows heat to escape rapidly at night. The Sahara also experiences strong winds, known as the harmattan, which can cause sandstorms and make it difficult to see or breathe.",
+          "The Sahara Desert is known for its harsh climate, with temperatures reaching over 120°F (49°C) during the day and dropping to below freezing at night.\n\nThis extreme temperature variation is due to the desert's low humidity and lack of cloud cover, which allows heat to escape rapidly at night.\n\nThe Sahara also experiences strong winds, known as the harmattan, which can cause sandstorms and make it difficult to see or breathe.",
       },
       wildlifeButton: {
         title: "Sahara Desert Wildlife",
         description:
-          "Despite its harsh conditions, the Sahara is home to a surprising variety of wildlife. Some of the most iconic animals of the Sahara include the dromedary camel, fennec fox, and addax antelope. Many of these animals have adapted to survive in the desert by conserving water and seeking shelter during the hottest parts of the day. The Sahara is also home to a variety of insects, reptiles, and birds, including the majestic ostrich.",
+          "Despite its harsh conditions, the Sahara is home to a surprising variety of wildlife. Some of the most iconic animals of the Sahara include the dromedary camel, fennec fox, and addax antelope.\n\nMany of these animals have adapted to survive in the desert by conserving water and seeking shelter during the hottest parts of the day.\n\nThe Sahara is also home to a variety of insects, reptiles, and birds, including the majestic ostrich.",
       },
       peopleButton: {
         title: "Sahara Desert People and Culture",
         description:
-          "For thousands of years, the Sahara has been home to a variety of cultures and civilizations. Many indigenous groups, such as the Tuareg and Berber people, have adapted to the harsh conditions of the desert by developing unique lifestyles and traditions. These cultures often revolve around nomadic herding or trading, with camels playing a crucial role in transportation and commerce. The Sahara has also been an important crossroads for trade and migration, with many historic cities and landmarks still standing today.",
+          "For thousands of years, the Sahara has been home to a variety of cultures and civilizations. Many indigenous groups, such as the Tuareg and Berber people, have adapted to the harsh conditions of the desert by developing unique lifestyles and traditions.\n\nThese cultures often revolve around nomadic herding or trading, with camels playing a crucial role in transportation and commerce.\n\nThe Sahara has also been an important crossroads for trade and migration, with many historic cities and landmarks still standing today.",
       },
     }
     this.onMenuButtonClick = this.onMenuButtonClick.bind(this)

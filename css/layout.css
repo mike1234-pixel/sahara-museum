@@ -2,11 +2,11 @@ body {
   max-height: 100vh;
 }
 
+.scene-container {
+  padding-top: 100px;
+}
+
 .scene {
   width: 80vw;
   height: 80vh;
-}
-
-.scene-container {
-  padding-top: 60px;
 }

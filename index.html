@@ -10,12 +10,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta
-      http-equiv="origin-trial"
-      data-feature="WebVR (For Chrome M59+)"
-      data-expires="2017-07-28"
-      content="ArFv1ZeTwzkhjNE00uAE+XtiQB41fwqG/TqlFMLrepd9sforQSvQE/tgfIbUMYNuNre4QR1k4/z8xp2mV3dbhwwAAABeeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjEiLCJleHBpcnkiOjE1MDEyMTcwMDIsImlzU3ViZG9tYWluIjp0cnVlfQ=="
-    />
     <meta charset="utf-8" />
     <title>Sahara Desert Tour</title>
     <meta
@@ -42,12 +36,10 @@
     </nav>
     <div class="container">
       <div class="scene-container">
-        <h1>Welcome to the Sahara Desert!</h1>
-        <h2>Click the cards to learn more, and explore!</h2>
         <div class="scene">
           <a-scene
             background="color: #212"
-            environment="preset: egypt; skyColor: #00aaff; horizonColor: #fff; shadow: true; shadowSize: 10; ground: canyon;"
+            environment="preset: egypt; skyColor: #00aaff; horizonColor: #fff; shadow: true; shadowSize: 10; dressingAmount: 5; dressingVariance: 1 1 1;"
             cursor="rayOrigin: mouse; fuse: false"
             raycaster="objects: .raycastable"
             info-message="htmlSrc: #messageText"
@@ -75,22 +67,19 @@
                 src="assets/3d-models/cactus/scene.gltf"
               ></a-asset-item>
               <a-asset-item
-                id="persepolis"
-                src="assets/3d-models/persepolis/scene.gltf"
+                id="pyramid"
+                src="assets/3d-models/pyramid/scene.gltf"
               ></a-asset-item>
-
               <img
                 id="climatePoster"
                 src="./assets/images/sahara.jpg"
                 crossorigin="anonymous"
               />
-
               <img
                 id="wildlifePoster"
                 src="./assets/images/sahara-fox.jpg"
                 crossorigin="anonymous"
               />
-
               <img
                 id="peoplePoster"
                 src="./assets/images/sahara-people.jpg"
@@ -118,6 +107,22 @@
               ></a-mixin>
             </a-assets>
 
+            <!-- intro message -->
+            <a-entity position="0 3 -5">
+              <a-plane
+                src="./assets/images/sahara.jpg"
+                height="1"
+                width="6"
+                opacity="1"
+              ></a-plane>
+              <a-text
+                value="Welcome to the Sahara Desert!\n\nClick the cards to learn more, and explore!"
+                align="center"
+                color="#fff"
+              ></a-text>
+            </a-entity>
+            <!-- intro message -->
+
             <a-entity
               gltf-model="#camel"
               position="-5 0.2 -5"
@@ -132,12 +137,12 @@
               modify-materials
             ></a-entity>
 
-            <a-entity
+            <!--<a-entity
               gltf-model="#camel"
               position="-30 0.2 -30"
               scale="5 5 5"
               modify-materials
-            ></a-entity>
+            ></a-entity>-->
 
             <a-entity
               gltf-model="#palm-tree"
@@ -147,9 +152,9 @@
             ></a-entity>
 
             <a-entity
-              gltf-model="#persepolis"
-              position="30 -17 -35"
-              scale="100 100 100"
+              gltf-model="#pyramid"
+              position="10 0 -100"
+              scale="10 10 10"
               modify-materials
             ></a-entity>
 
@@ -189,6 +194,7 @@
               raycaster="objects: .raycastable"
               line="color: #118A7E"
             ></a-entity>
+            <!-- info panel ui -->
             <a-entity id="ui" position="0 1.6 -2.5">
               <a-entity id="menu" highlight>
                 <a-entity
@@ -225,7 +231,6 @@
                   ></a-entity>
                 </a-entity>
               </a-entity>
-
               <a-entity
                 id="infoPanel"
                 position="0 0 0.5"
@@ -248,7 +253,7 @@
                 ></a-entity>
               </a-entity>
             </a-entity>
-            <!--<a-text value="Hello, World!" position="0 100 0.5"></a-text>-->
+            <!-- info panel ui -->
             <a-plane
               material="color: #FFFFFF;
               src: #floor;

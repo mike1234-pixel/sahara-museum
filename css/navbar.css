@@ -3,9 +3,9 @@
   height: 60px;
   background: linear-gradient(
     27deg,
-    rgba(0, 255, 254, 1) 0%,
-    rgba(137, 138, 255, 1) 58%,
-    rgba(91, 93, 255, 1) 88%
+    rgba(255, 224, 91, 1) 28%,
+    rgba(255, 249, 137, 1) 58%,
+    rgba(255, 224, 91, 1) 88%
   );
   padding: 0 20px;
   box-sizing: border-box;
@@ -23,10 +23,10 @@
 }
 .inner-nav .logo {
   font-size: 3rem;
-  color: var(--white);
+  color: rgb(151, 133, 56);
 }
 
 .inner-nav a {
   font-size: 1.6rem;
-  color: var(--white);
+  color: rgb(151, 133, 56);
 }
