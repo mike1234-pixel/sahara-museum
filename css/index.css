@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 @import "layout.css";
+@import "container.css";
 @import "navbar.css";
+
+:root {
+  font-family: "Carlito", sans-serif;
+  --white: #ffffff;
+  --dark: #1d1e1e;
+}
 
 /* Box sizing rules */
 *,

@@ -3,27 +3,24 @@ AFRAME.registerComponent("info-panel", {
     var buttonEls = document.querySelectorAll(".menu-button")
     var fadeBackgroundEl = (this.fadeBackgroundEl =
       document.querySelector("#fadeBackground"))
-    this.movieImageEl
+    this.cardImageEl
     this.infoTitleEl = document.querySelector("#infoTitle")
     this.infoDescriptionEl = document.querySelector("#infoDescription")
-    this.movieInfo = {
-      karigurashiButton: {
-        title: "Frontend Developer\nPrototype Creative\n",
-        //imgEl: document.querySelector("#karigurashiMovieImage"), // thumbnail
+    this.cardInfo = {
+      climateButton: {
+        title: "Sahara Desert Climate",
         description:
-          "Overview:\nWorking on various projects for a web agency; a mix of corporate websites, online stores, and web applications.\n\nTechnologies and methodologies:\nHTML, CSS, Sass, BEM, JavaScript, React, Vue, jQuery, Bootstrap, Tailwind.\n\nResponsibilities:\nBuilding projects from designs, estimating tasks, writing stories, communication with project management team. Building new features and fixing bugs.\n\nAchievements:\nDeveloped and launched projects on time and within budget. Maintained consistent design patterns and code standards across all projects.",
+          "The Sahara Desert is known for its harsh climate, with temperatures reaching over 120°F (49°C) during the day and dropping to below freezing at night. This extreme temperature variation is due to the desert's low humidity and lack of cloud cover, which allows heat to escape rapidly at night. The Sahara also experiences strong winds, known as the harmattan, which can cause sandstorms and make it difficult to see or breathe.",
       },
-      kazetachinuButton: {
-        title: "Software Engineer - React\nOri",
-        //imgEl: document.querySelector("#kazetachinuMovieImage"),
+      wildlifeButton: {
+        title: "Sahara Desert Wildlife",
         description:
-          "Overview:\nDeveloping the frontend for Ori Global Cloud.\n\nTechnologies and methodologies:\nReact, TypeScript, CSS modules, Formik, React Query, React Table, Jest, Testing Library, Cypress, Storybook, Figma, Git / Version Control, CI / CD, Scrum, Jira.\n\nResponsibilities:\nAgile ceremonies, reviewing PRs, presentation / demo of new FE features to engineering team at the end of sprint. \n\nAchievements:\nProduction of robust, clean, peer reviewed code covered by automated tests. Timely delivery and presentation of features.",
+          "Despite its harsh conditions, the Sahara is home to a surprising variety of wildlife. Some of the most iconic animals of the Sahara include the dromedary camel, fennec fox, and addax antelope. Many of these animals have adapted to survive in the desert by conserving water and seeking shelter during the hottest parts of the day. The Sahara is also home to a variety of insects, reptiles, and birds, including the majestic ostrich.",
       },
-      ponyoButton: {
-        title: "Software Engineer - React\nAvayler / Halfords",
-        //imgEl: document.querySelector("#ponyoMovieImage"),
+      peopleButton: {
+        title: "Sahara Desert People and Culture",
         description:
-          "Overview:\nDeveloping the scheduling module for the Avayler platform.\n\nTechnologies and methodologies:\nReact, TypeScript, Styled Components, React Query, Material UI, Jest, Testing Library, Azure Devops, Scrumban. \n\nResponsibilities:\nAgile ceremonies, peer reviews, estimates, delivering robust features and fixing bugs.",
+          "For thousands of years, the Sahara has been home to a variety of cultures and civilizations. Many indigenous groups, such as the Tuareg and Berber people, have adapted to the harsh conditions of the desert by developing unique lifestyles and traditions. These cultures often revolve around nomadic herding or trading, with camels playing a crucial role in transportation and commerce. The Sahara has also been an important crossroads for trade and migration, with many historic cities and landmarks still standing today.",
       },
     }
     this.onMenuButtonClick = this.onMenuButtonClick.bind(this)
@@ -39,7 +36,7 @@ AFRAME.registerComponent("info-panel", {
     fadeBackgroundEl.getObject3D("mesh").material.depthTest = false
   },
   onMenuButtonClick: function (evt) {
-    var movieInfo = this.movieInfo[evt.currentTarget.id]
+    var cardInfo = this.cardInfo[evt.currentTarget.id]
     this.backgroundEl.object3D.scale.set(1, 1, 1)
     this.el.object3D.scale.set(1, 1, 1)
     if (AFRAME.utils.device.isMobile()) {
@@ -47,13 +44,8 @@ AFRAME.registerComponent("info-panel", {
     }
     this.el.object3D.visible = true
     this.fadeBackgroundEl.object3D.visible = true
-    // if (this.movieImageEl) {
-    //   this.movieImageEl.object3D.visible = false
-    // }
-    // this.movieImageEl = movieInfo.imgEl
-    // this.movieImageEl.object3D.visible = true
-    this.infoTitleEl.setAttribute("text", "value", movieInfo.title)
-    this.infoDescriptionEl.setAttribute("text", "value", movieInfo.description)
+    this.infoTitleEl.setAttribute("text", "value", cardInfo.title)
+    this.infoDescriptionEl.setAttribute("text", "value", cardInfo.description)
   },
   onBackgroundClick: function (evt) {
     this.backgroundEl.object3D.scale.set(0.001, 0.001, 0.001)
